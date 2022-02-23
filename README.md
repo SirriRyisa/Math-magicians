@@ -41,7 +41,7 @@ Use `npx eslint . --fix` to fix multiple errors.
 
 ## Authors
 
-👤 **STEVE W DAMES JR**
+👤 **Sirri Ryisa**
 
 - GitHub: [@githubhandle](https://github.com/SirriRyisa)
 - Twitter: [@twitterhandle](https://twitter.com/n_ryisa)
