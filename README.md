@@ -47,7 +47,6 @@ Use `npx eslint . --fix` to fix multiple errors.
 - Twitter: [@twitterhandle](https://twitter.com/n_ryisa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ryisa-sirri-ngwa-a30013202)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
