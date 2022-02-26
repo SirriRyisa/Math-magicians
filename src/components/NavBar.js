@@ -38,7 +38,7 @@ const NavBar = () => {
               style={({ isActive }) => ({
                 textDecoration: 'none',
                 margin: '0 10px',
-                borderBottom: isActive ? 'solid 5px #f5913e' : '',
+                borderBottom: isActive ? 'solid 4px #f5913e' : '',
                 color: isActive ? '#f5913e' : 'black',
               })}
             >
