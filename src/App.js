@@ -1,19 +1,19 @@
-import React, { useState, useEffect }from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import NumberFormat from "react-number-format"
+import NumberFormat from 'react-number-format';
 
 const App = () => {
-  const [preState, setPreState] = useState("");
-  const [curState, setCurState] = useState("");
-  const [input, setInput] = useState("0");
+  const [preState, setPreState] = useState('');
+  const [curState, setCurState] = useState('');
+  const [input, setInput] = useState('0');
   const [operator, setOperator] = useState(null);
   const [total, setTotal] = useState(false);
 
   const inputNum = (e) => {
-  if (curState.includes(".") && e.target.innerText === ".") return;
+    if (curState.includes('.') && e.target.innerText === '.') return;
 
-  if(total) {
-    setPreState("");
+    if(total) {
+    setPreState('');
   }
 
   curState ? setCurState(pre => pre + e.target.innerText) : setCurState(e.target.innerText);
@@ -25,56 +25,56 @@ const App = () => {
   }, [curState]);
 
   useEffect(() => {
-    setInput("0")
+    setInput('0')
   }, []);
 
   const operatorType = (e) => {
     setTotal(false)
     setOperator(e.target.innerText)
-    if (curState === "") return
-    if(preState !== "") {
+    if (curState === '') return
+    if(preState !== '') {
       equals()
     }setPreState(curState)
-    setCurState("")
+    setCurState('')
   };
 
   const equals = (e) => {
-    if(e?.target.innerText === "=") {
+    if(e?.target.innerText === '=') {
     setTotal(true)
   }
 
   let cal 
   switch (operator) {
-    case "/":
+    case '/':
     cal = String(parseFloat(preState) / parseFloat(curState)
     );
     break;
-    case "+":
+    case '+':
     cal = String(parseFloat(preState) + parseFloat(curState)
     );
     break;
-    case "X":
+    case 'X':
     cal = String(parseFloat(preState) * parseFloat(curState)
     );
     break;
-    case "-":
+    case '-':
     cal = String(parseFloat(preState) - parseFloat(curState)
     );
     break;
     default:
       return
   }
-  setInput("");
+  setInput('');
   setPreState(cal)
-  setCurState("") 
+  setCurState('') 
   
   };
 
   const minusPlus = () => {
-    if (curState.charAt(0) === "-") {
+    if (curState.charAt(0) === '-') {
       setCurState(curState.substring(1));
     }else {
-      setCurState("-" + curState);
+      setCurState('-' + curState);
     }
   };
 
@@ -85,9 +85,9 @@ const App = () => {
   }
 
   const reset = () => {
-    setPreState("");
-    setCurState("");
-    setInput("0")
+    setPreState('');
+    setCurState('');
+    setInput('0')
   };
 
   return (

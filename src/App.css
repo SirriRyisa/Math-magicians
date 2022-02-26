@@ -4,14 +4,14 @@
   box-sizing: border-box;
   -webkit-user-select: none;
   -webkit-user-drag: none;
-  -webkit-user-region: none;
+  /* -webkit-user-region: none; */
 }
 
 body {
   background-color: burlywood;
   display: grid;
   place-content: center;
-  font-family: "Roboto, san-serif";
+  /* font-family: "Roboto, san-serif"; */
   height: 100vh;
   font-size: 2rem;
 }
@@ -31,8 +31,8 @@ body {
   display: grid;
   height: 76vh;
   width: 100%;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   gap: 1px;
 }
 
@@ -48,7 +48,7 @@ body {
 .btn {
   display: grid;
   place-content: center;
-  background-color: rgba(54,52,52);
+  background-color: rgba(54, 52, 52);
   border-radius: 3px;
   color: white;
   cursor: pointer;
@@ -82,4 +82,4 @@ body {
   place-content: unset;
   text-align: center;
   padding-left: 2rem;
-};
+}
