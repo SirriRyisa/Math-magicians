@@ -37,7 +37,7 @@ const NavBar = () => {
               className="link"
               style={({ isActive }) => ({
                 textDecoration: 'none',
-                margin: '0 10px',
+                margin: '0 9px',
                 borderBottom: isActive ? 'solid 5px #f5913e' : '',
                 color: isActive ? '#f5913e' : 'black',
               })}
