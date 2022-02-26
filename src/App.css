@@ -1,85 +1,16 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
-  /* -webkit-user-region: none; */
-}
-
-body {
-  background-color: burlywood;
-  display: grid;
-  place-content: center;
-  /* font-family: "Roboto, san-serif"; */
+.main {
   height: 100vh;
-  font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-.container {
-  height: 80vh;
-  width: 80vh;
-  background-color: black;
-  border-radius: 1rem;
-  padding: 1rem;
-  -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
-}
-
-.wrapper {
-  display: grid;
-  height: 76vh;
-  width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 1px;
-}
-
-.screen {
-  grid-column: 1 / -1;
-  color: white;
-  text-align: right;
-  padding: 0.5rem;
-  font-size: 4rem;
-  overflow: hidden;
-}
-
-.btn {
-  display: grid;
-  place-content: center;
-  background-color: rgba(54, 52, 52);
-  border-radius: 3px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background-color: grey;
-}
-
-.light-gray {
-  background-color: grey;
-  color: black;
-}
-
-.light-gray:hover {
-  background-color: white;
-}
-
-.orange {
-  background-color: orange;
-}
-
-.ornage:hover {
-  background-color: white;
-  color: orange;
-}
-
-.zero {
-  grid-column: 1 / span 2;
-  place-content: unset;
+.h2-general {
   text-align: center;
-  padding-left: 2rem;
+  margin-bottom: 15px;
+}
+
+.text-wrapper {
+  padding: 20px;
+  background: #e0e0e0;
+  line-height: 25px;
 }
